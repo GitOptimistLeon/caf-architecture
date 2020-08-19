@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>CAF Architechture</title>
+
+  <!-- Mobile Specific meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Embeded Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font-awesome and Google Icons -->
+  <script src="https://kit.fontawesome.com/dcd356c426.js" crossorigin="anonymous"></script>
+
+  <!-- External Css  -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body onload="myFunctionLoader()">
+
+  <!-- Preloader -->
+  <div id="loader">
+    <img src="images/logo-gif.gif" alt="Logo gif" style="width:100%; border-radius:100%;">
+  </div>
+  <!-- Preloader -->
+
+  <div style="display:none;" id="myDiv">
+
+    <!-- Side Bar -->
+    <div class="sidebar w3-hide-small w3-hide-medium w3-black animate-left" style="background: url(images/pro-three-bg.jpg)  no-repeat center; background-size: cover;">
+
+      <div class="w3-padding-16 w3-center">
+        <h1 class="w3-text-yellow w3-padding-small">CAF Architecture</h1>
+        <i class="fas fa-phone w3-small w3-text-yellow"></i> &nbsp;<span class="w3-text-yellow"> +233 20 793 6666</span>&nbsp;
+        <i class="fas fa-clock w3-small w3-text-yellow"></i> &nbsp;<span class="w3-text-yellow"> Mon - Sat | 24hrs</span>
+      </div>
+      <a href="#home"><i class="fas fa-home w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Home</a>
+      <a href="#showcase"><i class="fas fa-grip-vertical w3-padding-tiny w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Showcase</a>
+      <a href="#services"><i class="fas fa-hard-hat w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Services</a>
+      <a href="#founder"><i class="fas fa-user w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Founder</a>
+      <a href="#pricing"><i class="fas fa-wallet w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Pricing</a>
+      <a href="#contact"><i class="fas fa-at w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Contact</a>
+
+      <div class="socials w3-padding-small w3-center w3-padding-16">
+        <a href="mailto:Cafarchitectureinc@gmail.com"><i class="fas fa-at w3-medium w3-text-yellow w3-hover-text-red"></i></a>
+        <a href="https://www.instagram.com/cafarchitecture/"><i class="fab fa-instagram w3-medium w3-text-yellow w3-hover-text-brown"></i></a>
+        <a href="https://web.facebook.com/caf.decorations"><i class="fab fa-facebook-f w3-medium w3-text-yellow w3-hover-text-indigo"></i></a>
+      </div>
+    </div><!-- Side Bar -->
+
+
+    <!-- Smaller Screen sidenav -->
+    <div id="mySidenav" class="animate-left sidenav" onclick="this.style.display='none'">
+      <div class="w3-right-align w3-padding-10">
+        <i onclick="closeNav()" class="fas fa-times w3-hide-large w3-small w3-padding-large w3-text-yellow"></i>
+      </div>
+      <div class="w3-padding-16 w3-center">
+        <h3 class="w3-text-yellow">CAF Architecture</h3>
+        <i class="fas fa-phone w3-tiny w3-text-yellow"></i> &nbsp;<span class="w3-text-yellow"> +233 20 793 6666</span><br>
+        <i class="fas fa-clock w3-tiny w3-text-yellow"></i> &nbsp;<span class="w3-text-yellow"> Mon - Sat | 24hrs</span>
+      </div>
+      <a href="#home"><i class="fas fa-home w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Home</a>
+      <a href="#showcase"><i class="fas fa-grip-vertical w3-padding-tiny w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Showcase</a>
+      <a href="#services"><i class="fas fa-hard-hat w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Services</a>
+      <a href="#founder"><i class="fas fa-user w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Founder</a>
+      <a href="#contact"><i class="fas fa-at w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Contact</a>
+      <a href="#pricing"><i class="fas fa-wallet w3-margin-right w3-large w3-text-grey w3-hover-text-yellow"></i> Pricing</a>
+
+      <div class="socials w3-padding-small w3-center w3-padding-10">
+        <a href="mailto:Cafarchitectureinc@gmail.com"><i class="fas fa-at w3-medium w3-text-yellow w3-hover-text-red"></i></a>
+        <a href="https://www.instagram.com/cafarchitecture/"><i class="fab fa-instagram w3-medium w3-text-yellow w3-hover-text-brown"></i></a>
+        <a href="https://web.facebook.com/caf.decorations"><i class="fab fa-facebook-f w3-medium w3-text-yellow w3-hover-text-indigo"></i></a>
+      </div>
+
+    </div>
+    <!-- Smaller Screen sidenav -->
+
+
+    <!--Topnav for Medium and small screens -->
+    <div class="navbar w3-hide-large animate-top">
+      <a href="#">
+        <h6 class="w3-text-black">CAF Architechture</h6>
+      </a>
+      <a href="#" class="right">
+        <i onclick="openNav()" class="fas fa-bars w3-large w3-text-black w3-hover-text-yellow"></i>
+      </a>
+    </div>
+    <!--Topnav for Medium and small screens -->
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Top Section -->
+      <div id="home" class="w3-padding-32 top-section">
+        <img src="images/logo.png" class="animate-top w3-circle" alt="CAF Architechture Logo">
+        <h1 class="heading w3-text-black animate-opacity w3-padding-0">A Design & Build Company</h1>
+        <h4 class="w3-text-grey animate-opacity">
+          We design, build and do general maintenance for commercial and residential buildings.</h4>
+      </div><!-- Top Section -->
+
+      <!-- Showcase section -->
+      <div class="w3-row w3-padding-32 animate-bottom">
+        <h1 id="showcase" class="sub-heading w3-text-yellow w3-padding-0">Recent Projects</h1>
+        <div class="w3-padding-8">
+          <span class="dot w3-black"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="project w3-col l6 m6">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-one.jpg" alt="Private Residence">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-two.jpg" alt="Private Residence">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-three.jpg" alt="Sub Box Restaurant">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/secu-two.jpg" alt="Pyramid House Secu Rock Installation">
+        </div>
+
+        <div class="project w3-col l6 m6">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-five.jpg" alt="Private Residence">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-four.jpg" alt="Sub Box Restaurant">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/pro-six.jpg" alt="Private Residence ">
+          <img onclick="onClick(this)" class="w3-image w3-padding-tiny" src="images/secu.jpg" alt="Pyramid House Secu Rock Installation">
+        </div>
+      </div><!-- Showcase section -->
+
+      <!-- Image Modal -->
+      <div id="modal01" class="modal" onclick="this.style.display='none'">
+        <span class="close"><i class="fas fa-times w3-small w3-text-yellow"></i></span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div><!-- Image Modal -->
+
+      <!-- Services Section -->
+      <div class="w3-padding-64">
+        <h1 id="services" class="sub-heading w3-text-yellow w3-padding-0">Services</h1>
+        <div class="w3-padding-8">
+          <span class="dot w3-black"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="w3-row">
+
+          <div class="w3-col l4 m4 w3-padding-small">
+            <p class="w3-text-black">We are a company known for providing high-quality services at the best prices within Ghana and its neighbouring countries.</p>
+            <div class="w3-center">
+              <i class="fas fa-hard-hat w3-text-light-grey" style="font-size:18rem;"></i>
+            </div>
+          </div>
+
+          <div class="w3-col l8 m8">
+
+            <div class="tab">
+              <button class="tablinks" onclick="openService(event, 'Interior')" id="defaultOpen">
+                <i class="fas fa-hard-hat w3-small w3-text-black"></i> Interior Design</button>
+
+              <button class="tablinks" onclick="openService(event, 'Exterior')">
+                <i class="fas fa-toolbox w3-small w3-text-black"></i> Exterior Design</button>
+            </div>
+
+            <div id="Interior" class="tabcontent animate-opacity">
+              <h3>Interior Design</h3>
+              <ul class="w3-ul">
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Acoustic Ceilling</span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Plasterboard Ceiling</span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Venetian Plaster</span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Eooxy Flooring</span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Dry-wall partitioning and cladding </span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Painting</span>
+                </li>
+                <li>
+                  <i class="fas fa-hard-hat w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Wall Decor</span>
+                </li>
+              </ul>
+            </div>
+
+            <div id="Exterior" class="tabcontent animate-opacity">
+              <h3>Exterior Design</h3>
+              <ul class="w3-ul">
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Marblite Stone Effects</span>
+                </li>
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Graffiato (Rustic Decor)</span>
+                </li>
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Wall Smoothening/Skimming (Andre)</span>
+                </li>
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Painting</span>
+                </li>
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">Stamped Concrete</span>
+                </li>
+                <li>
+                  <i class="fas fa-toolbox w3-small w3-text-black"></i>
+                  <span class="w3-padding-tiny">And more... </span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- Services Section -->
+
+      <!-- Designers Section -->
+      <div class="w3-padding-64">
+        <h1 id="founder" class="sub-heading w3-text-black w3-padding-0">Founder</h1>
+        <div class="w3-padding-8">
+          <span class="dot w3-black"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="w3-row">
+          <div class="w3-col l4 m5">
+
+            <div class="w3-card-4 w3-light-grey w3-round">
+              <img src="images/charles_bw.jpg" class="w3-image w3-round w3-border w3-border-yellow" alt="Image of Charles">
+            </div>
+
+          </div>
+
+          <div class="w3-col l8 m5">
+            <div class="w3-padding-large">
+              <h2 class="w3-text-yellow w3-margin-0">Charles Klutse Young</h2>
+              <h6 class="w3-text-grey">Founder & CEO</h6>
+              <p>We have been in business over the last decade and are a team of dedicated young men.
+                I can proudly say we have grown our client-base over the years due to our relentless drive to satisfy our customers.</p>
+              <a href="mailto:Cafarchitectureinc@gmail.com" style="text-decoration:none;">
+                <div class="chip w3-card-2 w3-hover-yellow">
+                  <img src="images/logo.png" alt="Person" width="96" height="96">
+                  <span class="w3-text-white">contract </span>
+                  &nbsp;<i class="fas fa-at w3-large w3-text-white"></i>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div><!-- Designers Section -->
+
+      <div class="w3-padding-24">
+
+        <div class="w3-row">
+
+          <div class="w3-col l6 m6 w3-padding-medium">
+            <h3 id="contact" class="sub-heading w3-text-yellow w3-padding-0"> Contact Information</h3>
+            <div class="w3-padding-16">
+              <span class="dot w3-black"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <i class="fas fa-phone w3-small w3-text-yellow"></i><span class="w3-text-black"> &nbsp;+233 20 793 6666</span><br><br>
+            <i class="far fa-bookmark w3-small w3-text-yellow"></i> <span class="w3-text-black"> &nbsp;P.O.Box KN 951, Kaneshie, Accra, GH.</span><br><br>
+            <i class="fas fa-at w3-small w3-text-yellow"></i> <span class="w3-text-black"> &nbsp;Cafarchitectureinc@gmail.com</span><br><br>
+            <i class="fas fa-map-pin w3-small w3-text-yellow"></i><span class="w3-text-black"> &nbsp;33 Nsawam Road, Accra, GH.</span><br><br>
+
+            <h4 id="contact" class="w3-text-yellow w3-padding-0"> About</h4>
+
+            <div class="w3-padding-4">
+              <span class="dot w3-black"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+            <div class="">
+              <h6 class="w3-text-grey">We design, build and do general maintenance for commercial and residential buildings.</h6>
+              <img src="images/logo.png" class="animate-top w3-circle" alt="CAF Architechture Logo" style="width:8%;">
+            </div>
+
+
+          </div>
+
+          <div id="pricing" class="w3-col l6 m6 w3-padding-medium">
+            <div class="w3-round w3-light-grey">
+              <div class="w3-black w3-round w3-center w3-padding-24">
+                <h2 class="w3-text-light-grey sub-heading">Some Basic Pricing</h2>
+              </div>
+              <div>
+                <ul class="w3-ul w3-center">
+                  <li>
+                    <h5>Epoxy Flooring</h5>
+                    <h3>GHc 200</h3>
+                    <span>Per meter square</span>
+                  </li>
+                  <li>
+                    <h5>Plasterboard ceiling</h5>
+                    <h3>GHc 110</h3>
+                  </li>
+                  <li>
+                    <h5>Acoustic ceiling</h5>
+                    <h3>GHc 110</h3>
+                    <span>For usg grids</span>
+                  </li>
+                  <li>
+                    <h5>Dry wall Partition</h5>
+                    <h3>GHc 150</h3>
+                    <span>Per meter square</span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <!-- <a href="mailto:Cafarchitectureinc@gmail.com" class=" w3-large w3-white w3-hover-black w3-btn">Inquire more</a> -->
+                    <a href="mailto:Cafarchitectureinc@gmail.com" style="text-decoration:none;">
+                      <div class="chip w3-card w3-hover-yellow">
+                        <img src="images/logo.png" alt="Person" width="96" height="96">
+                        <span class="w3-text-white">Enquire</span>
+                        <i class="fas fa-at w3-large w3-text-white"></i>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footernavbar animate-bottom-footer">
+        <span class="w3-hide-medium w3-text-grey w3-hide-small">&copy; 2020 CAF Architecture</span>
+        <div class="socialsfooter w3-hide-large">
+          <a href="mailto:Cafarchitectureinc@gmail.com"><i class="fas fa-at w3-small w3-text-yellow w3-hover-text-yellow"></i></a>
+          <a href="https://www.instagram.com/cafarchitecture/"><i class="fab fa-instagram w3-small w3-text-yellow w3-hover-text-brown"></i></a>
+          <a href="https://web.facebook.com/caf.decorations"><i class="fab fa-facebook-f w3-small w3-text-yellow w3-hover-text-indigo"></i></a>
+        </div>
+        <a href="#home"><i class="fas fa-angle-double-up w3-hover-text-grey"></i></a>
+      </div>
+      <div class="w3-center w3-hide-large w3-padding-small w3-black">
+        <span class="w3-hide-large w3-text-grey w3-text-small">
+          &copy; 2020 CAF Architecture.</span>
+      </div>
+      <!-- Footer -->
+    </div><!-- Main Content -->
+
+  </div>
+
+
+  <script src="js/myModalImg.js"></script>
+  <script src="js/mySidenav.js"></script>
+  <script src="js/myTab.js"></script>
+  <script src="js/myLoader.js"></script>
+</body>
+
+</html>
